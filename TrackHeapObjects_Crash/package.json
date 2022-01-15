@@ -1,0 +1,8 @@
+{
+	"name": "issue1",
+	"private": true,
+	"scripts": {
+		"start_normal": "node index.js",
+		"start_trackHeap": "node --track-heap-objects index.js"
+	}
+}
