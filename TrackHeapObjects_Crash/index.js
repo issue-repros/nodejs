@@ -36,5 +36,5 @@ for (let i = 0; i < 5000; i++) {
 }
 console.log("PostLoop");
 
-deepClone(Object.freeze(data));
+deepClone(data);
 console.log("Done");
