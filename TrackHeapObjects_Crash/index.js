@@ -2,10 +2,20 @@ const deepClone = value=>{
 	if (Array.isArray(value)) {
 		return value.map(val=>deepClone(val));
 	} if (typeof value === "object" && value) {
+
+		// crash occurs, with this version
 		return Object.keys(value).reduce((memo, k)=>{
 			memo[k] = deepClone(value[k]);
 			return memo;
 		}, {});
+
+		// crash does not occur, with this version
+		/*const func = (memo, k, value)=>{
+			memo[k] = deepClone(value[k]);
+			return memo;
+		};
+		return Object.keys(value).reduce((memo, k)=>func(memo, k, value), {});*/
+
 	}
 	return value;
 };
@@ -13,7 +23,7 @@ const deepClone = value=>{
 const data = {
 	arr1: [],
 	arr2: [
-		{prop1: [1]}
+		{prop1: []}
 	]
 };
 console.log("PreLoop");
