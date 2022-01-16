@@ -7,11 +7,13 @@
 
 <details>
 <summary>Screen capture (Node 16.13.2)</summary>
+
 ![](https://i.imgur.com/gLiTAPQ.gif)
 </details>
 
 <details>
 <summary>Screen capture (Node 14.17.1)</summary>
+
 ![](https://i.imgur.com/AMc2k7n.gif)
 </details>
 
@@ -46,5 +48,6 @@ So the bug in NodeJS must have something to do with recursive functions.
 
 <details>
 <summary>Screen capture showing before and after</summary>
+
 ![](https://i.imgur.com/GufDT7R.gif)
 </details>
